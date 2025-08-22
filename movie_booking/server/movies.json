@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Avatar: The Way of Water",
+    "genre": "Action, Adventure, Sci-Fi",
+    "duration": "3h 12m",
+    "rating": 7.8,
+    "description": "Jake Sully lives with his newfound family on Pandora...",
+    "image": "https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "price": 200,
+    "showTimes": ["10:00 AM", "2:00 PM", "6:00 PM", "9:30 PM"]
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "genre": "Action, Drama",
+    "duration": "2h 11m",
+    "rating": 8.3,
+    "description": "Maverick pushes the envelope as a top naval aviator...",
+    "image": "https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "price": 220,
+    "showTimes": ["11:00 AM", "3:00 PM", "7:00 PM", "10:00 PM"]
+  }
+]
+
+
