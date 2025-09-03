@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deepseek Chat</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <h1>Deepseek Chat</h1>
+      <select id="model">
+        <option value="deepseek/deepseek-chat-v3.1:free">Deepseek v3.1 (free)</option>
+      </select>
+    </header>
+
+    <main id="messages" class="messages" aria-live="polite"></main>
+
+    <form id="chat-form" class="composer" autocomplete="off">
+      <textarea id="input" rows="2" placeholder="Type a message..." required></textarea>
+      <button id="send" type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
