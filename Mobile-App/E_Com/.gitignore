@@ -38,6 +38,7 @@ local.properties
 # node.js
 #
 node_modules/
+Kart_Assets/
 npm-debug.log
 yarn-error.log
 
