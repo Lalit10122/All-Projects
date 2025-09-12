@@ -7,6 +7,7 @@ import productRoutes from './routes/product.routes.js'
 import orderRoutes from './routes/order.routes.js'
 import connectDB from './config/db.connect.js';
 import { PORT } from './config/config.js';
+import { buildAdminJS } from './config/setup.js';
 
 dotenv.config()
 const app = express();
@@ -29,12 +30,14 @@ const start = async () => {
 
     connectDB();
 
+    await buildAdminJS(app)
+
     // app.listen({port:3000,host:"0.0.0.0"},(err,address)=>{      
     app.listen(PORT, '0.0.0.0', (err, address) => {
       if (err) {
         console.log('error : ', err);
       } else {
-        console.log('Server is running on http://localhost:3000 ');
+        console.log(`Server is running on http://localhost:${PORT}/admin`);
       }
     });
   } catch (error) {
