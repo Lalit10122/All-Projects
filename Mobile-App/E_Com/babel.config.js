@@ -3,7 +3,7 @@ module.exports = function (api) {
   return {
     presets: ['module:@react-native/babel-preset'],
     plugins: [
-      'react-native-reanimated/plugin',
+      'react-native-worklets/plugin',
       [
         'module-resolver',
         {

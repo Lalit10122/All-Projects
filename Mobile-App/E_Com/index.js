@@ -2,16 +2,29 @@
  * @format
  */
 
-import { AppRegistry } from 'react-native';
-import App from './App';
+import 'react-native-gesture-handler';
+import { AppRegistry, Text, TextInput } from 'react-native';
+
 import { name as appName } from './app.json';
-import {Provider} from 'react-redux'
-import { store } from './src/redux/store';
+import {configureReanimatedLogger,ReanimatedLogLevel} from 'react-native-reanimated'
+import App from 'src/App';
 
-const Root =()=>(
-  <Provider store={store}>
-    <App/>
-  </Provider>
-)
+configureReanimatedLogger({
+  level:ReanimatedLogLevel.warn,
+  strict:false
+})
 
-AppRegistry.registerComponent(appName, () => Root);
+if(Text.defaultProps){
+  Text.defaultProps.allowFontScaling = false;
+} else{
+  Text.defaultProps = {};
+  Text.defaultProps.allowFontScaling = false;
+}
+if(TextInput.defaultProps){
+  TextInput.defaultProps.allowFontScaling = false;
+} else{
+  TextInput.defaultProps = {};
+  TextInput.defaultProps.allowFontScaling = false;
+}
+
+AppRegistry.registerComponent(appName, () => App);
