@@ -14,6 +14,7 @@
     "create-apk": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
+    "@homielab/react-native-auto-scroll": "^1.1.2",
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native/new-app-screen": "0.80.2",
     "@react-navigation/bottom-tabs": "^7.4.7",
@@ -45,7 +46,7 @@
     "react-redux": "^9.2.0",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0",
-    "redux-saga": "^1.3.0"
+    "redux-saga": "^1.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

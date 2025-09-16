@@ -19,7 +19,7 @@ export const homeSlice = createSlice({
       state.error=null
     },
     setError:(state,action)=>{
-      state.loading=true,
+      state.loading=false,
       state.error= action.payload
     }
   }

@@ -13,7 +13,7 @@ const reduxStorage ={
     return Promise.resolve(value)
   },
   removeItem:(key)=>{
-    storage.delete(key,val)
+    storage.delete(key)
     return Promise.resolve()
   },
   
