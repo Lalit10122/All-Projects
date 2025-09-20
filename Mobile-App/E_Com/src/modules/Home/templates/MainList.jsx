@@ -2,6 +2,11 @@ import { ActivityIndicator, FlatList, Platform, RefreshControl, StyleSheet, Text
 import React, { useRef, useState } from 'react'
 import { dynamicDashboardData as fullData } from "@utils/db"
 import AdCarousal from '../orgainsm/AdCarousal'
+import Categories from '../orgainsm/Categories'
+import Sponser from '../orgainsm/Sponser'
+import VerticalList from '../orgainsm/VerticalList'
+import HorizontalList from '../orgainsm/HorizontalList'
+import AnimatedHorizontalList from '../orgainsm/AnimatedHorizontalList'
 
 
 
@@ -47,12 +52,17 @@ const MainList = ({ scrollYGlobal }) => {
 
   const SectionComponents = {
     ad_carousal: AdCarousal,
-    // categories: CategoriesComponent,
-    // sponser: SponsorBanner,
+    categories: Categories,
+    sponser: Sponser,
+    vertical_list: VerticalList,
+    horizontal_list: HorizontalList,
+    animated_horizontal_list: AnimatedHorizontalList,
+  }
+  
     // horizontal_list: HorizontalList,
     // vertical_list: VerticalList,
     // animated_horizontal_list: AnimatedHorizontalList,
-  }
+  
 
   const renderItem = ({ item }) => {
     const Component = SectionComponents[item.type]

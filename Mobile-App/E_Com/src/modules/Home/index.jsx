@@ -37,7 +37,7 @@ const Home = () => {
         </View>
       </Animated.View>
 
-      <Animated.View style={[moveUpStyle,{height:screenHeight}]}>
+      <Animated.View style={[moveUpStyle,{flex:1}]}>
         <MainList scrollYGlobal={scrollYGlobal} />
       </Animated.View>
     </View>
@@ -46,4 +46,8 @@ const Home = () => {
 
 export default Home
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  conatiner: {
+    flex: 1,
+  },
+})
